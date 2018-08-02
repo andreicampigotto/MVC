@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Códico</th><th>Nome</th><th>CPF</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ExemploMVC02.Models.Recrutadora recrutadora in @ViewBag.Recrutadoras)
+                {
+                    <tr>
+                        <td>@recrutadora.Id</td>
+                        <td>@recrutadora.Nome</td>
+                        <td>@recrutadora.CPF</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Códico</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
