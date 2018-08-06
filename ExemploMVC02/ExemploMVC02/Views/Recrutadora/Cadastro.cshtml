@@ -1,17 +1,25 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/View/Shared/Master.cshtml";
 }
+<div>
+    <form action="/Reccrutadora/Store" method="post">
+        <div class="form-group">
+            <label for="campo-nome">Nome</label>
+            <input type="text" class="form-control" name="recrutadora.Nome" id="Campo-Nome" />
+        </div>
+        <div class="form-group">
+            <label for="campo-CPF">CPF</label>
+            <input type="text" class="form-control" name="recrutadora.CPF" id="campo-cpf" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="campo-salario">Salário</label>
+            <input type="text" class="form-control" name="recrutadora.Salario" id="campo-salario" required="required" />
+        </div>
+        <div class="form-group">
+            <label for="campo-tempo-empresa">Tempo Empresa</label>
+            <select id="campo-tempo-empresa"
+        </div>
+    </form>
+</div>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Cadastro</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
